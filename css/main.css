@@ -1,0 +1,17 @@
+body,
+html{
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+}
+.animalButton{
+    margin-right: 7px;
+    margin-top: 7px;
+    background-color: aquamarine;
+}
+#logicDiv{
+    margin-top: 20px;
+}
+.animalGifs{
+    margin: 5px;
+}

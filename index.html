@@ -6,17 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>GIF-Tastic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/index.js"></script>
 </head>
 
-<body style="background-size:auto 100% auto;" class="d-flex align-items-center justify-content-center">
+<body onload='start()' background="assets/background_simple.jpg" style="background-size:auto 100% auto;">
 
-    <div>
-        hello World!
+    <div id="buttonDiv" class="container-fluid d-flex flex-wrap">
+          
     </div>
+
+    <div id="logicDiv" class="container-fluid d-flex flex-row">
+        <div id="gifDisplay" class="d-flex flex-wrap col-md-8">
+            
+        </div>
+        <div id="addNewAnimal" class="d-flex flex-column col-md-4">
+            <h3 id="animalTitle">Add Animal</h3>
+            <div>
+                <form>
+                    <input id="animalName" type="text"></input>
+                    <button id="animalSubmitButton" type="button" class="btn btn-primary addButton">Add Animal</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
 
 </body>
 
